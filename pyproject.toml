@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-last-packet"
+version = "0.1.0"
+description = "Contrastive agent environment for evaluator-induced extra effort"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+last-packet = "evaluator_effort.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["evaluator_effort*"]
